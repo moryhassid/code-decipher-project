@@ -1,26 +1,40 @@
 As part of the QA Experts course, I worked on a project to solve a code with cipher letters.
 
+
+<!-- TOC -->
+* [Deciphering](#deciphering)
+  * [**Part 1: Text mapping**](#part-1-text-mapping)
+  * [**Part 2: Text decoding**](#part-2-text-decoding)
+  * [**Part 3: File decoding**](#part-3-file-decoding)
+<!-- TOC -->
+
 I received a message with ciphertext and solved it using several methods:
 
+# Deciphering
 
+## **Part 1: Text mapping**
+Given a ciphertext and a lookup table, I was requested to decipher the text. 
 
-Part 1: Text mapping
-The code receives ciphertext and passes it to the get_dictionary_mapping function, whose purpose is probably to create a mapping of characters or words (such as a mapping for deciphering ciphertext).
+**Solution:**
+
+The code receives ciphertext and passes it to the `get_dictionary_mapping` function, whose purpose is probably to create a mapping of characters or words (such as a mapping for deciphering ciphertext).
 The output of the function is printed to the screen.
 
-For example:
+**For example:**
 
-Ciphertext:
-Uif tfdsfu dpef!
+Given the ciphertext:
+`Uif tfdsfu dpef!`
 
-Mapping (assuming simple Caesar cipher):
+and the mapping (assuming simple Caesar cipher):
 
 <p align="center">
   <img src="images\mapping.jpg" width="700">
 </p>
 
+The final result is written the next part
 
-Part 2: Text decoding
+
+## **Part 2: Text decoding**
 The encrypted text encrypted_text is passed to the decipher_text function, which is supposed to decrypt it.
 The decrypted text is printed to the screen.
 
@@ -33,7 +47,7 @@ Decrypted Text:
 The secret code!
 
 
-Part 3: File decoding
+## **Part 3: File decoding**
 The decipher_file function is loaded on the message.txt file, probably to decrypt its contents.
 
 for example:
