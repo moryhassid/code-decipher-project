@@ -1,11 +1,11 @@
 As part of the QA Experts course, I worked on a project to solve a code with cipher letters.
 
-
 <!-- TOC -->
 * [Deciphering](#deciphering)
   * [**Part 1: Text mapping**](#part-1-text-mapping)
   * [**Part 2: Text decoding**](#part-2-text-decoding)
   * [**Part 3: File decoding**](#part-3-file-decoding)
+  * [**Part 4: Data analysis from the file**](#part-4-data-analysis-from-the-file)
 <!-- TOC -->
 
 I received a message with ciphertext and solved it using several methods:
@@ -31,7 +31,7 @@ and the mapping (assuming simple Caesar cipher):
   <img src="images\mapping.jpg" width="700">
 </p>
 
-The final result is written the next part
+The final result is written in the next part
 
 
 ## **Part 2: Text decoding**
@@ -41,10 +41,10 @@ The decrypted text is printed to the screen.
 for example:
 
 Ciphertext:
-Uif tfdsfu dpef!
+`Uif tfdsfu dpef!`
 
 Decrypted Text:
-The secret code!
+`The secret code!`
 
 
 ## **Part 3: File decoding**
@@ -53,14 +53,17 @@ The decipher_file function is loaded on the message.txt file, probably to decryp
 for example:
 
 Original Encrypted File (message.txt):
-Uif tfdsfu dpef!
+`Uif tfdsfu dpef!`
 
 Decrypted File Content:
 The secret code!
 
 
-Part 4: Data analysis from the file
-The get_longest_word_in_a_file function finds the longest words in the results.txt file.
+## **Part 4: Data analysis from the file**
+
+Given a large text file we would like to find the longest word in the file. 
+
+The `get_longest_word_in_a_file` function finds the longest words in the results.txt file.
 for example:
 
 File Content (results.txt):
@@ -68,12 +71,11 @@ The quick brown fox
 jumped over the lazy dog
 
 Longest Word:
-jumped
+**jumped**
 
-The get_number_of_rows_in_a_file function counts the number of rows in the file results.txt.
+The `get_number_of_rows_in_a_file` function counts the number of rows in the file results.txt.
 for example:
-
 Number of Rows:
-2
+**2**
 
 The results are printed to the screen.
